@@ -1,0 +1,8 @@
+Vous souhaitez sur votre blog de voyage, insérer une carte personnalisée. Nous allons utiliser les cartes proposées par OpenStreetMap et le langage Python afin de générer ces cartes. Plus exactement, nous allons utiliser une bibliothèque Python nommée Folium. Une bibliothèque Python permet de rajouter des fonctionnalités au langage de base.
+Folium va donc nous permettre de créer nos propres cartes à partir des cartes proposées par OpenStreetMap.
+
+import folium
+c=folium.Map(location=[48.441341 , 0.080997],zoom_start=15)
+folium.Marker([48.43866, 0.08135],popup="Entrée principale").add_to(c)
+c.save('jailacarte.html')
+
